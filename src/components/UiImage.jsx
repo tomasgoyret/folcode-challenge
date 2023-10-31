@@ -6,9 +6,9 @@ const UiImage = ({ url, addClassname, onClick }) => {
     <Image
       src={url}
       alt="Next.js Logo"
-      width={600}
-      height={430}
-      className={` ${addClassname}`}
+      width={200}
+      height={90}
+      className={`${addClassname} self-center`}
       onClick={onClick}
     />
   );
