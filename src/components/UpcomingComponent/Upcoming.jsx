@@ -8,7 +8,7 @@ const Upcoming = ({ onClick }) => {
     return (
         <>
             <h3 className="w-full text-sm md:text-base flex justify-center py-8">Proximamente</h3>
-            <MoviesCarousel url={"upcoming?language=en-US&page=1"} onClick={onClick} />
+            <MoviesCarousel url={"upcoming?language=es-US&page=1"} onClick={onClick} />
         </>
     )
 }
