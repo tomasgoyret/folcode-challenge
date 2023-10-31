@@ -60,7 +60,7 @@ const MoviesCarousel = ({ url, onClick }) => {
 
     return (
         <>
-            {isLoading ? <UiLoader /> : isError ? (<div className='flex justify-center'><h3 className=' text-center border-red-500 border-2 text-red-500 w-1/2'>Ocurrió un error cargando las películas</h3></div>) : (<div className='flex justify-center'>
+            {isLoading ? <div className='flex justify-center items-center min-h-[100px]'><UiLoader /></div> : isError ? (<div className='flex justify-center'><h3 className=' text-center border-red-500 border-2 text-red-500 w-1/2'>Ocurrió un error cargando las películas</h3></div>) : (<div className='flex justify-center'>
                 <Carousel autoplayInterval={4000} value={currentMovies} responsiveOptions={responsiveOptions} numVisible={7} numScroll={3} style={{ maxWidth: '80%' }} itemTemplate={itemTemplate} />
             </div>)}
         </>
