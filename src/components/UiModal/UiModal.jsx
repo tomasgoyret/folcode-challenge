@@ -5,7 +5,7 @@ import "./UiModal.css"
 import UiMovieDetail from "../UiMovieDetail/UiMovieDetail";
 
 const getMovie = (id) => {
-  return fetch(`${process.env.NEXT_API_BASE_URL}/${id}?language=en-US`, {
+  return fetch(`${process.env.NEXT_API_BASE_URL}/${id}?language=es-US`, {
     headers: {
       Authorization:
         process.env.NEXT_API_KEY,
@@ -33,6 +33,10 @@ const UiModal = (props) => {
       })
       .finally(() => setLoading(false));
   }, [props.movie]);
+
+
+  console.log(movie)
+
 
   return (
     <Dialog
